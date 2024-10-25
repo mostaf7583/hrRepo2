@@ -3,6 +3,7 @@
     <persistence-unit name="com.myspace:Job-Evaluation-Point-Rating-System:1.0.0-SNAPSHOT" transaction-type="JTA">
         <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
         <jta-data-source>java:jboss/datasources/ExampleDS</jta-data-source>
+        <class>com.myspace.job_evaluation_point_rating_system.allevaluations</class>
         <exclude-unlisted-classes>true</exclude-unlisted-classes>
         <properties>
             <property name="hibernate.dialect" value="org.hibernate.dialect.H2Dialect"/>
