@@ -4,7 +4,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.myspace</groupId>
   <artifactId>Job-Evaluation-Point-Rating-System</artifactId>
-  <version>1.0.0-SNAPSHOT</version>
+  <version>22.0.0-SNAPSHOT</version>
   <packaging>kjar</packaging>
   <name>Job-Evaluation-Point-Rating-System</name>
   <description></description>
