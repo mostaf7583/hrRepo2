@@ -29,11 +29,17 @@ public class individualAssessment implements java.io.Serializable {
 	@org.kie.api.definition.type.Label("createby")
 	private java.lang.String createby;
 
-	@org.kie.api.definition.type.Label(value = "scopeofworkpoints")
+	@org.kie.api.definition.type.Label("scopeofworkpoints")
 	private java.lang.Integer scopeofworkpoints;
 
-	@org.kie.api.definition.type.Label(value = "complexityofworkpoints")
+	@org.kie.api.definition.type.Label("complexityofworkpoints")
 	private java.lang.Integer complexityofworkpoints;
+
+	@org.kie.api.definition.type.Label(value = "editBy")
+	private java.lang.String editBy;
+
+	@org.kie.api.definition.type.Label(value = "editDate")
+	private java.lang.String editDate;
 
 	public individualAssessment() {
 	}
@@ -136,6 +142,22 @@ public class individualAssessment implements java.io.Serializable {
 		this.complexityofworkpoints = complexityofworkpoints;
 	}
 
+	public java.lang.String getEditBy() {
+		return this.editBy;
+	}
+
+	public void setEditBy(java.lang.String editBy) {
+		this.editBy = editBy;
+	}
+
+	public java.lang.String getEditDate() {
+		return this.editDate;
+	}
+
+	public void setEditDate(java.lang.String editDate) {
+		this.editDate = editDate;
+	}
+
 	public individualAssessment(java.lang.String jobname,
 			java.lang.String adminstration, java.lang.String department,
 			java.lang.Integer educationpoints,
@@ -144,7 +166,8 @@ public class individualAssessment implements java.io.Serializable {
 			java.lang.Integer authoritypoints,
 			java.lang.Integer decisionpoints, java.lang.Integer totalpoints,
 			java.lang.String createby, java.lang.Integer scopeofworkpoints,
-			java.lang.Integer complexityofworkpoints) {
+			java.lang.Integer complexityofworkpoints, java.lang.String editBy,
+			java.lang.String editDate) {
 		this.jobname = jobname;
 		this.adminstration = adminstration;
 		this.department = department;
@@ -157,6 +180,8 @@ public class individualAssessment implements java.io.Serializable {
 		this.createby = createby;
 		this.scopeofworkpoints = scopeofworkpoints;
 		this.complexityofworkpoints = complexityofworkpoints;
+		this.editBy = editBy;
+		this.editDate = editDate;
 	}
 
 }
