@@ -35,11 +35,14 @@ public class individualAssessment implements java.io.Serializable {
 	@org.kie.api.definition.type.Label("complexityofworkpoints")
 	private java.lang.Integer complexityofworkpoints;
 
-	@org.kie.api.definition.type.Label(value = "editBy")
+	@org.kie.api.definition.type.Label("editBy")
 	private java.lang.String editBy;
 
-	@org.kie.api.definition.type.Label(value = "editDate")
+	@org.kie.api.definition.type.Label("editDate")
 	private java.lang.String editDate;
+
+	@org.kie.api.definition.type.Label(value = "edit")
+	private java.lang.Boolean edit;
 
 	public individualAssessment() {
 	}
@@ -158,6 +161,14 @@ public class individualAssessment implements java.io.Serializable {
 		this.editDate = editDate;
 	}
 
+	public java.lang.Boolean getEdit() {
+		return this.edit;
+	}
+
+	public void setEdit(java.lang.Boolean edit) {
+		this.edit = edit;
+	}
+
 	public individualAssessment(java.lang.String jobname,
 			java.lang.String adminstration, java.lang.String department,
 			java.lang.Integer educationpoints,
@@ -167,7 +178,7 @@ public class individualAssessment implements java.io.Serializable {
 			java.lang.Integer decisionpoints, java.lang.Integer totalpoints,
 			java.lang.String createby, java.lang.Integer scopeofworkpoints,
 			java.lang.Integer complexityofworkpoints, java.lang.String editBy,
-			java.lang.String editDate) {
+			java.lang.String editDate, java.lang.Boolean edit) {
 		this.jobname = jobname;
 		this.adminstration = adminstration;
 		this.department = department;
@@ -182,6 +193,7 @@ public class individualAssessment implements java.io.Serializable {
 		this.complexityofworkpoints = complexityofworkpoints;
 		this.editBy = editBy;
 		this.editDate = editDate;
+		this.edit = edit;
 	}
 
 }
