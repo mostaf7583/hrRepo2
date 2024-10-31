@@ -45,6 +45,7 @@ public class individualAssessment implements java.io.Serializable {
 	private java.lang.Boolean edit;
 
 	public individualAssessment() {
+	    this.edit = false;
 	}
 
 	public java.lang.String getJobname() {
@@ -193,7 +194,8 @@ public class individualAssessment implements java.io.Serializable {
 		this.complexityofworkpoints = complexityofworkpoints;
 		this.editBy = editBy;
 		this.editDate = editDate;
-		this.edit = edit;
+		this.edit = false;
+		
 	}
 
 }
