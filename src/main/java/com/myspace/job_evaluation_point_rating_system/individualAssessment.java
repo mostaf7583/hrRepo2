@@ -41,8 +41,8 @@ public class individualAssessment implements java.io.Serializable {
 	@org.kie.api.definition.type.Label("editDate")
 	private java.lang.String editDate;
 
-	@org.kie.api.definition.type.Label(value = "edit")
-	private java.lang.Boolean edit;
+	@org.kie.api.definition.type.Label("edit")
+	private boolean edit;
 
 	public individualAssessment() {
 	}
@@ -161,11 +161,27 @@ public class individualAssessment implements java.io.Serializable {
 		this.editDate = editDate;
 	}
 
-	public java.lang.Boolean getEdit() {
+	@Override
+	public String toString() {
+		return "IndividualAssessment {" + "jobname='" + jobname + '\''
+				+ ", administration='" + adminstration + '\''
+				+ ", department='" + department + '\'' + ", educationpoints="
+				+ educationpoints + ", experiencepoints=" + experiencepoints
+				+ ", supervisoryandmanagerialpoints="
+				+ supervisoryandmanagerialpoints + ", authoritypoints="
+				+ authoritypoints + ", decisionpoints=" + decisionpoints
+				+ ", totalpoints=" + totalpoints + ", createby='" + createby
+				+ '\'' + ", scopeofworkpoints=" + scopeofworkpoints
+				+ ", complexityofworkpoints=" + complexityofworkpoints
+				+ ", editBy='" + editBy + '\'' + ", editDate='" + editDate
+				+ '\'' + ", edit=" + edit + '}';
+	}
+
+	public boolean isEdit() {
 		return this.edit;
 	}
 
-	public void setEdit(java.lang.Boolean edit) {
+	public void setEdit(boolean edit) {
 		this.edit = edit;
 	}
 
@@ -178,7 +194,7 @@ public class individualAssessment implements java.io.Serializable {
 			java.lang.Integer decisionpoints, java.lang.Integer totalpoints,
 			java.lang.String createby, java.lang.Integer scopeofworkpoints,
 			java.lang.Integer complexityofworkpoints, java.lang.String editBy,
-			java.lang.String editDate, java.lang.Boolean edit) {
+			java.lang.String editDate, boolean edit) {
 		this.jobname = jobname;
 		this.adminstration = adminstration;
 		this.department = department;
@@ -193,29 +209,7 @@ public class individualAssessment implements java.io.Serializable {
 		this.complexityofworkpoints = complexityofworkpoints;
 		this.editBy = editBy;
 		this.editDate = editDate;
-		this.edit=edit;
-
+		this.edit = edit;
 	}
-	@Override
-public String toString() {
-    return "IndividualAssessment {" +
-            "jobname='" + jobname + '\'' +
-            ", administration='" + adminstration + '\'' +
-            ", department='" + department + '\'' +
-            ", educationpoints=" + educationpoints +
-            ", experiencepoints=" + experiencepoints +
-            ", supervisoryandmanagerialpoints=" + supervisoryandmanagerialpoints +
-            ", authoritypoints=" + authoritypoints +
-            ", decisionpoints=" + decisionpoints +
-            ", totalpoints=" + totalpoints +
-            ", createby='" + createby + '\'' +
-            ", scopeofworkpoints=" + scopeofworkpoints +
-            ", complexityofworkpoints=" + complexityofworkpoints +
-            ", editBy='" + editBy + '\'' +
-            ", editDate='" + editDate + '\'' +
-            ", edit=" + edit +
-            '}';
-}
-
 
 }
