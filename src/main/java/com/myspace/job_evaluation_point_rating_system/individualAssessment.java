@@ -196,5 +196,26 @@ public class individualAssessment implements java.io.Serializable {
 		this.edit=edit;
 
 	}
+	@Override
+public String toString() {
+    return "IndividualAssessment {" +
+            "jobname='" + jobname + '\'' +
+            ", administration='" + adminstration + '\'' +
+            ", department='" + department + '\'' +
+            ", educationpoints=" + educationpoints +
+            ", experiencepoints=" + experiencepoints +
+            ", supervisoryandmanagerialpoints=" + supervisoryandmanagerialpoints +
+            ", authoritypoints=" + authoritypoints +
+            ", decisionpoints=" + decisionpoints +
+            ", totalpoints=" + totalpoints +
+            ", createby='" + createby + '\'' +
+            ", scopeofworkpoints=" + scopeofworkpoints +
+            ", complexityofworkpoints=" + complexityofworkpoints +
+            ", editBy='" + editBy + '\'' +
+            ", editDate='" + editDate + '\'' +
+            ", edit=" + edit +
+            '}';
+}
+
 
 }
