@@ -193,6 +193,7 @@ public class individualAssessment implements java.io.Serializable {
 		this.complexityofworkpoints = complexityofworkpoints;
 		this.editBy = editBy;
 		this.editDate = editDate;
+		this.edit=edit;
 
 	}
 
