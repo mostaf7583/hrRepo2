@@ -18,7 +18,7 @@
         </work-item-handler>
         <work-item-handler>
             <resolver>mvel</resolver>
-            <identifier>new org.jbpm.process.workitem.executesql.ExecuteSqlWorkItemHandler("java:jboss/kie/datasources/6713c34b-aa39-4b5c-8444-e29dc0d38f17_f4f1b80b-202b-47c8-94ad-4bc82db6d85c")</identifier>
+            <identifier>new org.jbpm.process.workitem.executesql.ExecuteSqlWorkItemHandler("java:jboss/kie/datasources/de6f2154-aaf8-4aee-8aa3-d9ba56cb63fe_f92e4c79-fc69-4ac2-b047-243a35017244")</identifier>
             <parameters/>
             <name>ExecuteSQL</name>
         </work-item-handler>
